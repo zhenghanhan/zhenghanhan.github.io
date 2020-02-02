@@ -2,6 +2,11 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
 
+    {% if site.busuanzi %}
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+      </script>
+    {% endif %}
+
     {% if site.google_analytics %}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
       <script>
