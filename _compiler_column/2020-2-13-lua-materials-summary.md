@@ -1,25 +1,32 @@
-# Lua参考资料汇总
+---
+layout: compiler_column
+title: Lua参考资料汇总
+description: 本文列举了一些学习Lua相关知识的参考资料
+author: 郑憨憨 zhenghanhan
+excerpt_separator: <!--more-->
+---
+
+本文列举了一些学习Lua相关知识的参考资料，和大家一起学习交流<!--more-->
+
 ## 官方资料
 本节信息来自于[Lua官网](http://www.lua.org/)
 1. [About](http://www.lua.org/about.html)页面总体介绍了Lua是什么、有什么特点等，比如：
 > Lua is **dynamically typed**, runs by interpreting bytecode with a **register-based** virtual machine, and has **automatic memory management** with **incremental garbage collection**, making it ideal for configuration, scripting, and rapid prototyping.
 
 2. [Doc](http://www.lua.org/docs.html)页面 汇聚了很多官方文档，如下：
-   - [Reference Manual][cb3fc604]
+   - [Reference Manual](https://www.lua.org/manual/5.3/manual.html)
    - Technical documentation
    - Papers
    - Books
      - Programming in Lua, fourth edition, August 2016
 
-  [cb3fc604]: https://www.lua.org/manual/5.3/manual.html "https://www.lua.org/manual/5.3/manual.html"
-
-
 3. [Download](http://www.lua.org/ftp/)页面 提供了Lua的各个版本的下载链接，笔者下载了最新的5.3.5，之后进行了解压，在笔者机器上的目录为~/workspace/lua/lua-project/lua-5.3.5
+
 4. [ReadMe](https://www.lua.org/manual/5.3/readme.html)页面 介绍了Lua的安装(笔者当前看到的最新为5.3版本)，笔者操作系统为Ubuntu16.04
- 1. build Lua源码的时候对readline开发包有依赖 所以首先
- > sudo apt-get install libreadline-dev
- 2. 接着在~/workspace/lua/lua-project/lua-5.3.5/目录下执行构建和安装
- > sudo make linux install
+   1. build Lua源码的时候对readline开发包有依赖 所以首先
+    > sudo apt-get install libreadline-dev
+   2. 接着在~/workspace/lua/lua-project/lua-5.3.5/目录下执行构建和安装
+    > sudo make linux install
 
     我们发现安装到这个地方了<br>
     cd src && mkdir -p /usr/local/bin /usr/local/include /usr/local/lib /usr/local/man/man1 /usr/local/share/lua/5.3 /usr/local/lib/lua/5.3
@@ -32,8 +39,8 @@
 5. [Lua在线源码](https://www.lua.org/source/) 可以通过浏览器浏览对应版本的Lua源码
 
 ## 其他权威资料
-1. [http://lua-users.org/](http://lua-users.org/)
-> lua-users.org is an internet site for and by users of the programming language Lua.
+- [http://lua-users.org/](http://lua-users.org/)
+  > lua-users.org is an internet site for and by users of the programming language Lua.<br>
 
   其中有一些不错的子模块，例如
   - [lua-users wiki](http://lua-users.org/wiki/)
@@ -41,8 +48,7 @@
       - [LuaSource](http://lua-users.org/wiki/LuaSource) comments on the source code and implementation of Lua.
       - [ModifyingLua](http://lua-users.org/wiki/ModifyingLua) example of changing Lua itself
 
-
-2. 源码阅读顺序推荐
+- 源码阅读顺序推荐
 
   Mike Pall在这个[post](https://www.reddit.com/r/programming/comments/63hth/ask_reddit_which_oss_codebases_out_there_are_so/c02pxbp/)上面给了一个阅读Lua源代码的次序表，我把他粘贴出来放在下面：
 
