@@ -17,6 +17,10 @@ excerpt_separator: <!--more-->
    - [Reference Manual](https://www.lua.org/manual/5.3/manual.html)
    - Technical documentation
    - Papers
+     - [Lua – an extensible extension language](https://www.lua.org/spe.html) by R. Ierusalimschy, L. H. de Figueiredo, W. Celes,Software: Practice & Experience 26 #6 (1996) 635–652
+     - [A look at the design of Lua](http://www.lua.org/doc/cacm2018.pdf) by R. Ierusalimschy, L. H. de Figueiredo, W. Celes, Communications of the ACM 61 #11 (2018) 114–123.
+     - [The Evolution of Lua](https://www.lua.org/doc/hopl.pdf)
+
    - Books
      - Programming in Lua, fourth edition, August 2016
 
@@ -48,6 +52,7 @@ excerpt_separator: <!--more-->
       - [LuaSource](http://lua-users.org/wiki/LuaSource) comments on the source code and implementation of Lua.
       - [ModifyingLua](http://lua-users.org/wiki/ModifyingLua) example of changing Lua itself
 
+
 - 源码阅读顺序推荐
 
   Mike Pall在这个[post](https://www.reddit.com/r/programming/comments/63hth/ask_reddit_which_oss_codebases_out_there_are_so/c02pxbp/)上面给了一个阅读Lua源代码的次序表，我把他粘贴出来放在下面：
@@ -68,3 +73,14 @@ excerpt_separator: <!--more-->
    - lparser.c, lcode.c: recursive descent parser, targetting a register-based VM. start from chunk() and work your way through. read the expression parser and the code generator parts last.
    - lgc.c: incremental garbage collector. take your time.
    - Read all the other files as you see references to them. Don't let your stack get too deep though.
+
+
+- 博客资料
+  - lua stack and register
+      - [https://the-ravi-programming-language.readthedocs.io/en/latest/lua-parser.html](https://the-ravi-programming-language.readthedocs.io/en/latest/lua-parser.html)
+  - Lua 5.3 Bytecode Reference
+      - [https://the-ravi-programming-language.readthedocs.io/en/latest/lua_bytecode_reference.html](https://the-ravi-programming-language.readthedocs.io/en/latest/lua_bytecode_reference.html)
+  - lua 基础数据结构（TValue、TString、lua_State）
+      - [http://geekluo.com/](http://geekluo.com/)
+  - lua精选阅读-[tufts大学](https://www.google.com/search?rlz=1C1SQJL_zh-CNUS821US821&sxsrf=ALeKk03birZEhE4lNcGbXYcXKcn0u_9AOA%3A1582076966466&ei=JpRMXuX_G82rtQaQroawCg&q=tufts+&oq=tufts+&gs_l=psy-ab.3..35i39.376261.376261..376549...0.0..0.875.1391.5-1j1......0....1..gws-wiz.olapw8zcCcw&ved=0ahUKEwjlqt_8v9znAhXNVc0KHRCXAaYQ4dUDCAs&uact=5)
+      - [http://www.cs.tufts.edu/comp/250RTS/#lua](http://www.cs.tufts.edu/comp/250RTS/#lua)
