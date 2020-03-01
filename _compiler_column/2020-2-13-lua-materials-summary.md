@@ -20,7 +20,7 @@ excerpt_separator: <!--more-->
      - [Lua – an extensible extension language](https://www.lua.org/spe.html) by R. Ierusalimschy, L. H. de Figueiredo, W. Celes,Software: Practice & Experience 26 #6 (1996) 635–652
      - [A look at the design of Lua](http://www.lua.org/doc/cacm2018.pdf) by R. Ierusalimschy, L. H. de Figueiredo, W. Celes, Communications of the ACM 61 #11 (2018) 114–123.
      - [The Evolution of Lua](https://www.lua.org/doc/hopl.pdf)
-
+     - [**The Implementation of Lua 5**](http://www.lua.org/doc/jucs05.pdf)
    - Books
      - Programming in Lua, fourth edition, August 2016
 
@@ -78,8 +78,10 @@ excerpt_separator: <!--more-->
 - 博客资料
   - lua stack and register
       - [https://the-ravi-programming-language.readthedocs.io/en/latest/lua-parser.html](https://the-ravi-programming-language.readthedocs.io/en/latest/lua-parser.html)
-  - Lua 5.3 Bytecode Reference
+  - Lua Bytecode Reference
       - [https://the-ravi-programming-language.readthedocs.io/en/latest/lua_bytecode_reference.html](https://the-ravi-programming-language.readthedocs.io/en/latest/lua_bytecode_reference.html)
+      - [A No-Frills Introduction to Lua 5.1 VM Instructions](http://luaforge.net/docman/83/98/ANoFrillsIntroToLua51VMInstructions.pdf)
+      - [Lua 5.2 Bytecode and Virtual Machine](http://files.catwell.info/misc/mirror/lua-5.2-bytecode-vm-dirk-laurie/lua52vm.html)
   - lua 基础数据结构（TValue、TString、lua_State）
       - [http://geekluo.com/](http://geekluo.com/)
   - lua精选阅读-[tufts大学](https://www.google.com/search?rlz=1C1SQJL_zh-CNUS821US821&sxsrf=ALeKk03birZEhE4lNcGbXYcXKcn0u_9AOA%3A1582076966466&ei=JpRMXuX_G82rtQaQroawCg&q=tufts+&oq=tufts+&gs_l=psy-ab.3..35i39.376261.376261..376549...0.0..0.875.1391.5-1j1......0....1..gws-wiz.olapw8zcCcw&ved=0ahUKEwjlqt_8v9znAhXNVc0KHRCXAaYQ4dUDCAs&uact=5)
